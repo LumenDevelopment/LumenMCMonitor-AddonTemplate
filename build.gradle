@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'cz.snvk'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven {url 'https://maven.lumenvm.cloud/repository/public/'}
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    compileOnly 'cloud.lumenvm:lumenmc-monitor:dev03-02-2026-170151'
+    compileOnly 'org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT'
+}
+
+test {
+    useJUnitPlatform()
+}
