@@ -1,6 +1,7 @@
 package cloud.lumenvm;
 
 import cloud.lumenvm.api.*;
+import cloud.lumenvm.monitor.Embed;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
