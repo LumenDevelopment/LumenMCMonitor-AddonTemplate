@@ -15,7 +15,7 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    compileOnly 'cloud.lumenvm:lumenmc-monitor:b1.3'
+    compileOnly 'cloud.lumenvm:lumenmc-monitor:b1.4'
     compileOnly 'org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT'
 }
 
